@@ -59,15 +59,9 @@ class Listing:
     return "%s, %s."%(self.art.title, self.price)
 
 moma = Client('The MOMA', 'New York', True)
-
 veneer = Marketplace()
-
-
 edytta = Client('Edytta Halpirt', None, False)
-
 girl_with_mandolin = Art("Picasso, Pablo", "Girl with a Mandolin (Fanny Tellier)", 1910, 'oil on canvas', edytta)
-
-#print(girl_with_mandolin)
 
 edytta.sell_artwork(girl_with_mandolin, '$6M(USD)')
 veneer.show_listings()
